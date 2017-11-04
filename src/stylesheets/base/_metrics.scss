@@ -1,0 +1,30 @@
+$breakpoints: (
+  'xs': 375px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+);
+
+// Margin and paddings
+$xss: 5px;
+$xs:  10px;
+$sm:  15px;
+$m:   20px;
+$md:  25px;
+$lg:  30px;
+$xl:  40px;
+
+$boxRadius: 3px;
+
+$pagePadding: 25px;
+
+$buttonBorderSize: 1px;
+$buttonBorderRadius: 3px;
+
+$headerHeight: 140px;
+$menuHeight: 50px;
+
+$breadcrumbsHeight: 60px;
+
+$footerHeight: 70px;

@@ -1,0 +1,150 @@
+$buttonPadding: 10px;
+$buttonBorderSize: 1px;
+$default: #736357;
+$success: #8dc63f;
+$info: #b7b7b7;
+$warning: #f26c4f;
+$danger: #c05842;
+
+@mixin createButton($background, $color) {
+  background-color: $background;
+  border: $buttonBorderSize solid $background;
+  color: $color;
+
+  &.button--hover {
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($background, 5);
+    }
+  }
+
+  &.button--reversed {
+    background-color: $color;
+    border-color: $color;
+    color: $background;
+
+    &.button--hover {
+      &:hover {
+        background-color: darken($color, 5);
+      }
+    }
+  }
+
+  &.button--bordered {
+    background-color: $color;
+    border-color: $background;
+    color: $background;
+
+    &.button--hover {
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+}
+
+@mixin manageButtonSizes($size, $fontSize) {
+  height: $size;
+  line-height: $size;
+  font-size: $fontSize;
+
+  .button__icon {
+    display: inline-block;
+    width: $fontSize + 5;
+    height: $fontSize + 5;
+    line-height: $size;
+  }
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 0 $buttonPadding;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: default;
+  outline: none;
+
+  &.button--default {
+    @include createButton($default, #ffffff);
+  }
+
+  &.button--success {
+    @include createButton($success, #ffffff);
+  }
+
+  &.button--info {
+    @include createButton($info, #ffffff);
+  }
+
+  &.button--warning {
+    @include createButton($warning, #ffffff);
+  }
+
+  &.button--danger {
+    @include createButton($danger, #ffffff);
+  }
+
+  &.button--xs {
+    @include manageButtonSizes(20px, 11px);
+  }
+
+  &.button--sm {
+    @include manageButtonSizes(30px, 12px);
+  }
+
+  &.button--m {
+    @include manageButtonSizes(35px, 13px);
+  }
+
+  &.button--md {
+    @include manageButtonSizes(40px, 14px);
+  }
+
+  &.button--lg {
+    @include manageButtonSizes(50px, 16px);
+  }
+
+  &.button--xl {
+    @include manageButtonSizes(60px, 18px);
+  }
+
+  &.button--center {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.button--block {
+    display: block;
+  }
+
+  .button--preIcon, .button--postIcon {
+    height: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+    }
+  }
+
+  .button--preIcon {
+    float: left;
+    margin-right: $buttonPadding;
+  }
+
+  .button--postIcon {
+    float: right;
+    margin-left: $buttonPadding;
+  }
+
+  &.button--only-icons {
+    .button--preIcon, .button--postIcon {
+      margin: 0;
+    }
+  }
+}

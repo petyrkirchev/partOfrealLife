@@ -1,0 +1,29 @@
+@import '../utils/media';
+
+.question-answer {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+
+  .question-answer__items {
+    margin-bottom: 20px;
+  }
+
+  .question-answer__items--last {
+    margin-bottom: 0;
+  }
+
+  .question-answer__question {
+    color: #4A4342;
+    font-weight: 700;
+  }
+
+  .question-answer__answer {
+    color: #926334;
+  }
+
+  @include media('>=lg') {
+    .question-answer__items--before-last {
+      margin-bottom: 0;
+    }
+  }
+}

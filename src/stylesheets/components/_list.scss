@@ -1,0 +1,46 @@
+.list {
+  .list__table {
+    float: left;
+
+    tr {
+      td {
+        padding: 0;
+        margin: 0;
+        height: 35px;
+
+        &.list__td--bullet {
+          float: left;
+        }
+
+        &.list__td--label {
+          width: 35%;
+        }
+
+        &.list__td--text {
+          width: 55%;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+
+  .list__bullet {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #736357;
+    border-radius: 50%;
+  }
+
+  .list__label, .list__text {
+    font-size: 16px;
+  }
+
+  .list__label {
+    color: #4A4342;
+  }
+
+  .list__text {
+    color: #999999;
+  }
+}

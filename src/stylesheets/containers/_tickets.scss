@@ -1,0 +1,91 @@
+@import '../base/colors.scss';
+@import '../base/metrics.scss';
+@import '../utils/media.scss';
+
+.tickets {
+  overflow: visible;
+  .tickets__table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    thead {
+      color: $redOrange;
+      text-transform: uppercase;
+      border-bottom: 1px solid #e1e1e1;
+
+      tr {
+        th {
+          padding: 10px;
+          border: 0;
+        }
+      }
+    }
+
+    .tickets__table__body {
+      tr {
+        border-bottom: 1px solid #e1e1e1;
+
+        td {
+          position: relative;
+          color: $brown;
+          padding: 20px 10px;
+          font-size: 14px;
+          font-weight: 700;
+
+          span {
+            display: block;
+            font-size: 12px;
+            font-weight: 300;
+          }
+
+          .tickets__table__check {
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            margin-top: -10px;
+          }
+        }
+      }
+    }
+  }
+
+  @include media('<md') {
+    overflow-x: scroll;
+
+    .tickets__table {
+      .tickets__table__body {
+        tr {
+          td {
+            padding: 20px 10px 20px 40px;
+
+            .tickets__table__check {
+              left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tickets__pricing {
+  p {
+    color: $brown;
+    font-size: 14px;
+
+    span {
+      display: inline-block;
+      width: 100px;
+    }
+
+    &.tickets__pricing--total {
+      color: $redOrange;
+      text-transform: uppercase;
+
+      span {
+        text-transform: lowercase;
+      }
+    }
+  }
+}

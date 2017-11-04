@@ -1,0 +1,87 @@
+$borderRadius: 3px;
+$buttonBorderSize: 1px;
+$default: #736357;
+$success: #8dc63f;
+$info: #b7b7b7;
+$warning: #f26c4f;
+$danger: #c05842;
+
+@mixin setColors($color) {
+  border: $buttonBorderSize solid $color;
+
+  &.button-group--horizontal {
+    .button-group__button {
+      border-right: $buttonBorderSize solid $color !important;
+    }
+  }
+
+  &.button-group--vertical {
+    .button-group__button {
+      border-bottom: $buttonBorderSize solid $color !important;
+    }
+  }
+}
+
+.button-group {
+  display: inline-block;
+  border-radius: $borderRadius;
+
+  &.button-group--default {
+    @include setColors($default);
+  }
+
+  &.button-group--success {
+    @include setColors($success);
+  }
+
+  &.button-group--info {
+    @include setColors($info);
+  }
+
+  &.button-group--warning {
+    @include setColors($warning);
+  }
+
+  &.button-group--danger {
+    @include setColors($danger);
+  }
+
+  .button-group__button {
+    border: 0;
+    border-radius: 0;
+  }
+
+  &.button-group--horizontal {
+    .button-group__button {
+      display: inline-block;
+
+      &.button-group__button--first {
+        border-top-left-radius: $borderRadius - 1;
+        border-bottom-left-radius: $borderRadius - 1;
+      }
+
+      &.button-group__button--last {
+        border-top-right-radius: $borderRadius - 1;
+        border-bottom-right-radius: $borderRadius - 1;
+        border-right: 0 !important;
+      }
+    }
+  }
+
+  &.button-group--vertical {
+    .button-group__button {
+      display: block;
+
+      &.button-group__button--first {
+        border-top-left-radius: $borderRadius - 1;
+        border-top-right-radius: $borderRadius - 1;
+      }
+
+      &.button-group__button--last {
+        border-bottom-left-radius: $borderRadius - 1;
+        border-bottom-right-radius: $borderRadius - 1;
+        border-bottom: 0 !important;
+      }
+    }
+  }
+}

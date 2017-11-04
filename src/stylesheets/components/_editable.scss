@@ -1,0 +1,67 @@
+@import '../base/colors';
+@import '../base/metrics';
+
+.editable {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  padding-right: 5px;
+  margin-right: -5px;
+  text-transform: inherit;
+
+  &.editable--block {
+    display: block;
+  }
+
+  &.editable--editing {
+    &:after {
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      top: -5px;
+      bottom: -5px;
+      content: '';
+      border: 1px dashed $mediumBrown;
+    }
+
+    &.editable--light {
+      &:after {
+        border-color: $white;
+      }
+    }
+  }
+
+  .editable__field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    resize: none;
+    text-align: inherit;
+    text-transform: inherit;
+  }
+
+  .editable__length {
+    display: block;
+    position: absolute;
+    right: -1px;
+    bottom: -16px;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 10px;
+    border-bottom-left-radius: $boxRadius;
+    border-bottom-right-radius: $boxRadius;
+
+    background-color: $mediumBrown;
+    color: white;
+
+    font-size: 9px;
+  }
+}

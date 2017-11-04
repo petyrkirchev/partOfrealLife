@@ -1,0 +1,33 @@
+@import '../base/metrics.scss';
+@import '../base/colors.scss';
+
+$padding: 10px;
+$height: $footerHeight - 2*$padding;
+
+footer {
+  background-color: $white;
+  height: $footerHeight;
+  line-height: $height;
+  padding: $padding;
+  font-size: 0.875em;
+
+  #footer_logo {
+    display: inline-block;
+    height: $height;
+    float: right;
+  }
+
+  @include media("<md") {
+    height: auto;
+    line-height: 1.25em;
+    text-align: center;
+
+    #footer_credits {
+      margin-top: $padding;
+    }
+
+    #footer_logo {
+      float: none;
+    }
+  }
+}

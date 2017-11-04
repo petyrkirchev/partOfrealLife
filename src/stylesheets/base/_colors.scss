@@ -1,0 +1,33 @@
+// Colors
+$transparent: rgba(0, 0, 0, 0);
+$white: #ffffff;
+$lightWhite: #f7f7f7;
+$darkWhite: #cccccc;
+$lightGrey: #b7b7b7;
+$grey: #868686;
+$midDarkGrey: #333333;
+$darkGrey: #666666;
+$green: #8dc63f;
+$lightBrown: #caaf9b;
+$brown: #736357;
+$mediumBrown: #534741;
+$darkBrown: #362f2d;
+$redOrange: #f26c4f;
+$darkOrange: #c05842;
+
+// Page colors
+$backgroundColor: #ffffff;
+$baseColor: #666666;
+$lightColor: #fefeff;
+
+// Navigation
+$menuColor: $brown;
+$menuColorHover: $darkBrown;
+
+// Button colors
+$defaultBtn: $brown;
+$successBtn: $green;
+$warningBtn: $redOrange;
+$dangerBtn: $darkOrange;
+$infoBtn: $lightGrey;
+$infoBtnStrong: $grey;

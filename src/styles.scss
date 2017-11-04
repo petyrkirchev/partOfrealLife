@@ -1,0 +1,56 @@
+@import './theme/bundle.scss';
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-color: $backgroundColor;
+  color: $baseColor;
+}
+
+.main {
+  height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+// Bootstrap tooltips overwrite
+.tooltip {
+  font-size: 1em;
+
+  &.top .tooltip-arrow {
+    border-top-color: $darkBrown;
+  }
+
+  &.bottom .tooltip-arrow {
+    border-bottom-color: $darkBrown;
+  }
+
+  &.left .tooltip-arrow {
+    border-left-color: $darkBrown;
+  }
+
+  &.right .tooltip-arrow {
+    border-right-color: $darkBrown;
+  }
+
+  .tooltip-inner {
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    font-size: 0.75em;
+    font-weight: 300;
+    background: $darkBrown;
+    color: $darkWhite;
+
+    strong {
+      font-weight: 500;
+      color: $white;
+    }
+  }
+}

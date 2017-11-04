@@ -1,0 +1,37 @@
+{
+  "headings": {
+    "orderNumber": "Поръчка №",
+    "profileName": "Профил име",
+    "ticketsCount": "Брой билети",
+    "amount": "Сума",
+    "status": "Статус",
+    "date": "Дата",
+    "additionalInfo": "Допълнителна информация",
+    "options": "Опции"
+  },
+  "items": {
+    "1": {
+      "orderNumber": "102273222",
+      "profileName": "Иван",
+      "ticketsCount": 1,
+      "amount": 40,
+      "status": "Платено",
+      "date": "11.11.2016",
+      "additionalInfo": {
+        "1": {
+          "label": "Фактура",
+          "value": "Да"
+        },
+        "2": {
+          "label": "Плащане",
+          "value": "Банка"
+        },
+        "3": {
+          "label": "Клиент",
+          "value": "Стар"
+        }
+      },
+      "options": "view"
+    }
+  }
+}

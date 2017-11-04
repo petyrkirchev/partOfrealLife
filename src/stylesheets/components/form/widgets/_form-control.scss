@@ -1,0 +1,35 @@
+@import '../../../base/metrics';
+@import '../../../base/colors';
+
+$formHintPadding: 3px;
+
+.form__control {
+  position: relative;
+  width: 100%;
+  background: #F9F9F9;
+  margin-bottom: 20px;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  padding: $formHintPadding;
+  border-radius: $boxRadius;
+
+  &.form__control--focused {
+    border-color: $redOrange;
+  }
+
+  &.form__control--md {
+    height: $md;
+  }
+
+  &.form__control--lg {
+    height: $lg;
+  }
+
+  &.form__control--xl {
+    height: $xl + 10;
+  }
+
+  .form__control__label {
+
+  }
+}

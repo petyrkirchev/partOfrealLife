@@ -1,0 +1,29 @@
+
+.table-size {
+  .table-size__container {
+    position: relative;
+
+    .table-size__selection {
+      display: none;
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      border: 1px solid #7f3221;
+      box-sizing: content-box;
+      z-index: -1;
+    }
+
+    .table-size__row {
+      float: left;
+      .table-size__item {
+        box-sizing: border-box;
+        border: 1px solid #6e625f;
+        margin: 0 3px 3px 0;
+
+        &.table-size__item--selected {
+          border-color: #aa4e39;
+        }
+      }
+    }
+  }
+}

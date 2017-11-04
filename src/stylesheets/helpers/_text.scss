@@ -1,0 +1,29 @@
+@import '../base/colors.scss';
+
+// Text colors
+
+.text--default {
+  color: $brown;
+}
+
+.text--success {
+  color: $green;
+}
+
+.text--warning {
+  color: $redOrange;
+}
+
+.text--error {
+  color: $darkOrange;
+}
+
+.text--info {
+  color: $grey;
+}
+
+// Text transforms
+
+.text--uppercase {
+  text-transform: uppercase;
+}

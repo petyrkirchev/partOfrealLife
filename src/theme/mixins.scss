@@ -1,0 +1,15 @@
+@mixin blur($radius: 3, $imagesDir: '../images') {
+  filter: url('#{$imagesDir}/blur.svg#blur');
+  -webkit-filter: blur(#{$radius}px);
+  filter: blur(#{$radius}px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$radius}');
+}
+
+@mixin disableButtonStyle() {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}

@@ -1,0 +1,75 @@
+.button__download {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  background: #F9F9F9;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
+  color: #666666;
+  text-align: center;
+  padding-right: 38px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+
+  &.button__download--last {
+    margin-right: 0;
+  }
+
+  &.button__download--no-icon {
+    padding-right: 0;
+  }
+
+  .button__download__icon {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 1px;
+
+    img {
+      display: block;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  &.button__download--pdf {
+    .button__download__icon {
+      background-color: #EA3413;
+    }
+  }
+
+  &.button__download--csv {
+    .button__download__icon {
+      background-color: #18AD69;
+    }
+  }
+
+  &:hover {
+    color: #666666;
+  }
+
+  &.button__download--inverse {
+    background: #4A4342;
+    color: #ffffff;
+    overflow: hidden;
+
+    .button__download__icon {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 38px;
+      height: 38px;
+      background-color: #736357;
+    }
+  }
+}

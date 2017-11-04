@@ -1,0 +1,34 @@
+.slide {
+  position: relative;
+  height: 30px;
+
+  .slide__container {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+
+    .slide__container__content {
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .slide__prev, .slide__next {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    z-index: 2;
+  }
+
+  .slide__prev {
+    left: -32px;
+  }
+
+  .slide__next {
+    right: -32px;
+  }
+}

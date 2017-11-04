@@ -1,0 +1,14 @@
+.wrapper__back-site {
+  position: relative;
+
+  .wrapper__back-site__breadcrumbs {
+    position: absolute;
+    width: 100%;
+    top: 95px;
+    left: 0;
+  }
+
+  .wrapper__back-site__content {
+    padding: 210px 25px 25px 25px;
+  }
+}

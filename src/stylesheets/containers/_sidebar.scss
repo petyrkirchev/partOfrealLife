@@ -1,0 +1,36 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 345px;
+  min-height: 100%;
+  background: #4A4342;
+  padding: 155px 45px 320px 30px;
+
+  .sidebar__menu {
+    padding: 30px 0;
+  }
+
+  .sidebar__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+
+    .sidebar__footer__logo {
+      height: 50px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar__footer__title {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin: 0 0 20px 0;
+    }
+
+    .sidebar__footer__copyrights {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+
+.table {
+  padding: 0;
+  margin: 0;
+
+  .table__heading {
+    height: 46px;
+    background-color: #f26c4f;
+    color: white;
+    text-transform: uppercase;
+
+    .table__heading__cell {
+      border: 0;
+    }
+  }
+
+  .table__body {
+    background-color: #f9f9f9;
+    color: #727272;
+  }
+
+  .table__row {
+    height: 55px;
+    border-bottom: 1px solid #c7c7c7;
+
+    &.table__row--last {
+      border-bottom: 0;
+    }
+  }
+
+  .table__cell {
+    vertical-align: middle;
+    border-top: 0;
+    border-right: 1px solid #c7c7c7;
+
+    &.table__cell--last {
+      border-right: 0;
+    }
+  }
+}

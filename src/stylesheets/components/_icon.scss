@@ -1,0 +1,66 @@
+@import '../base/metrics.scss';
+@import '../base/colors.scss';
+
+.icon {
+  display: inline-flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &.icon-text-light {
+    color: $white;
+  }
+
+  &.icon-text-dark {
+    color: $mediumBrown;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.icon-normal {
+    border-radius: 1px;
+  }
+
+  &.icon-rounded {
+    border-radius: $buttonBorderRadius;
+  }
+
+  &.icon-circle {
+    border-radius: 50%;
+  }
+
+  &.icon-sm   {
+    width: $sm;
+    height: $sm;
+    font-size: 0.5em;
+  };
+  &.icon-m    {
+    width: $m;
+    height: $m;
+    font-size: 0.75em;
+  };
+  &.icon-md   {
+    width: $md;
+    height: $md;
+    font-size: 1em;
+  };
+  &.icon-lg   {
+    width: $lg;
+    height: $lg;
+    font-size: 1.25em;
+  };
+  &.icon-xl   {
+    width: $xl;
+    height: $xl;
+    font-size: 1.5em;
+  };
+}

@@ -1,0 +1,123 @@
+@import '../../base/colors';
+@import '../../base/metrics';
+
+.form__checkbox {
+  margin-bottom: 25px;
+
+  /* Base for label styling */
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+  }
+
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 0.875em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  /* checkbox aspect */
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $brown;
+    background: #fff;
+    border-radius: $boxRadius;
+  }
+  /* checked mark aspect */
+  [type="checkbox"]:not(:checked) + label:after,
+  [type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all .2s;
+  }
+  /* checked mark aspect changes */
+  [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+  /* disabled checkbox */
+  [type="checkbox"]:disabled:not(:checked) + label:before,
+  [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+  }
+  [type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+  }
+  [type="checkbox"]:disabled + label {
+    color: #aaa;
+  }
+
+  &.form__checkbox--default {
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      color: $brown;
+    }
+
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+      border-color: $redOrange;
+    }
+
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+      color: $redOrange;
+    }
+  }
+
+  &.form__checkbox--dark {
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      color: $brown;
+    }
+
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+      border-color: $brown;
+    }
+
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+      color: $brown;
+    }
+  }
+
+  &.form__checkbox--light {
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      color: $white;
+    }
+
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+      border-color: $white;
+    }
+
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+      color: $brown;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.form-group {
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #EBEBEB;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 20px;
+
+  .form-group__label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: #fff;
+    padding: 0 20px;
+    color: #95989A;
+    font-size: 18px;
+    height: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &.form-group--important {
+    margin-top: 0;
+    background: #736357;
+    border: 0;
+    color: #fff;
+  }
+}

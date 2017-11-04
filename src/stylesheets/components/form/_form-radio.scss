@@ -1,0 +1,125 @@
+@import '../../base/colors';
+@import '../../base/metrics';
+
+.form__radio {
+  /* Base for label styling */
+  [type="radio"]:not(:checked),
+  [type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+  }
+
+  [type="radio"]:not(:checked) + label,
+  [type="radio"]:checked + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    font-size: 0.875em;
+    font-weight: 500;
+  }
+
+  /* radio aspect */
+  [type="radio"]:not(:checked) + label:before,
+  [type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $brown;
+    background: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  /* checked mark aspect */
+  [type="radio"]:not(:checked) + label:after,
+  [type="radio"]:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    left: 5px;
+    transition: all .2s;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #4A4342;
+  }
+  /* checked mark aspect changes */
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+  /* disabled radio */
+  [type="radio"]:disabled:not(:checked) + label:before,
+  [type="radio"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+  }
+  [type="radio"]:disabled:checked + label:after {
+    color: #999;
+  }
+  [type="radio"]:disabled + label {
+    color: #aaa;
+  }
+
+  &.form__radio--default {
+    [type="radio"]:not(:checked) + label,
+    [type="radio"]:checked + label {
+      color: $brown;
+    }
+
+    [type="radio"]:not(:checked) + label:before,
+    [type="radio"]:checked + label:before {
+      border-color: $redOrange;
+    }
+
+    [type="radio"]:not(:checked) + label:after,
+    [type="radio"]:checked + label:after {
+      color: $redOrange;
+    }
+  }
+
+  &.form__radio--dark {
+    [type="radio"]:not(:checked) + label,
+    [type="radio"]:checked + label {
+      color: $brown;
+    }
+
+    [type="radio"]:not(:checked) + label:before,
+    [type="radio"]:checked + label:before {
+      border-color: $brown;
+    }
+
+    [type="radio"]:not(:checked) + label:after,
+    [type="radio"]:checked + label:after {
+      background-color: $redOrange;
+    }
+  }
+
+  &.form__radio--light {
+    [type="radio"]:not(:checked) + label,
+    [type="radio"]:checked + label {
+      color: $white;
+    }
+
+    [type="radio"]:not(:checked) + label:before,
+    [type="radio"]:checked + label:before {
+      border-color: $white;
+    }
+
+    [type="radio"]:not(:checked) + label:after,
+    [type="radio"]:checked + label:after {
+      background-color: $white;
+      color: $brown;
+    }
+  }
+}

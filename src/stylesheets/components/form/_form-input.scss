@@ -1,0 +1,18 @@
+@import '../../base/metrics';
+@import '../../base/colors';
+
+.form-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  height: 100%;
+  line-height: 100%;
+  width: 100%;
+  text-indent: 10px;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: #999999;
+    font-size: 14px;
+  }
+}

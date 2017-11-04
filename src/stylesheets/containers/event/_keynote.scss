@@ -1,0 +1,150 @@
+@import '../../base/bundle.scss';
+@import '../../utils/bundle.scss';
+
+$contentPadding: 20px;
+
+.event__keynote {
+  display: flex;
+  flex-direction: column;
+  background: $lightWhite;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .event__keynote__header {
+    background: $mediumBrown;
+    border-radius: 4px;
+    color: $white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $contentPadding;
+
+    .event__keynote__day {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .event__keynote__content {
+    padding: $contentPadding;
+
+    .event__keynote__title {
+      color: $darkBrown;
+      font-weight: 300;
+      text-align: center;
+      margin: 0;
+      padding-bottom: $contentPadding;
+    }
+
+    .event__keynote__desc {
+      display: flex;
+      align-items: flex-start;
+      color: $brown;
+
+      .event__keynote__desc__image {
+        display: block;
+        width: 360px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        margin-right: $contentPadding;
+      }
+    }
+
+    .event__keynote__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: $contentPadding;
+    }
+
+    .event__keynote__organizer {
+      display: flex;
+      justify-content: flex-start;
+      color: $darkBrown;
+
+      .event__keynote__organizer__image {
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 3px;
+        margin-right: $contentPadding;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .event__keynote__organizer__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4 {
+          margin: 0;
+        }
+
+        span {
+          color: $brown;
+        }
+
+        strong {
+          color: $darkBrown;
+        }
+      }
+    }
+  }
+
+  @include media('<lg') {
+    .event__keynote__header {
+      flex-direction: column;
+
+      .event__keynote__day {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: $contentPadding/2;
+        padding-bottom: $contentPadding/2;
+        border-bottom: 1px solid $brown;
+
+        &:last-child {
+          border: 0;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    .event__keynote__content {
+      .event__keynote__desc {
+        flex-direction: column;
+
+        .event__keynote__desc__image {
+          width: 100%;
+          margin-bottom: $contentPadding;
+        }
+      }
+
+      .event__keynote__footer {
+        flex-direction: column;
+      }
+
+      .event__keynote__organizer {
+        flex-direction: column;
+        align-items: center;
+
+        .event__keynote__organizer__image {
+          margin-right: 0;
+        }
+
+        .event__keynote__organizer__info {
+          align-items: center;
+          margin-bottom: $contentPadding;
+
+          .event__keynote__organizer__info__job {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

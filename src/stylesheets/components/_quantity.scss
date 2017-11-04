@@ -1,0 +1,48 @@
+@import '../base/colors.scss';
+
+.quantity {
+  position: relative;
+  width: 90px;
+  height: 25px;
+  background-color: $brown;
+  border-radius: 3px;
+  user-select: none;
+
+  .quantity__action {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: $white;
+    font-size: 0.75em;
+    font-weight: 600;
+    outline: none;
+
+    &.quantity__action--minus {
+      left: 0;
+    }
+
+    &.quantity__action--plus {
+      right: 0;
+    }
+  }
+
+  .quantity__value {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 23px;
+    line-height: 23px;
+    top: 1px;
+    left: 50%;
+    margin-left: -20px;
+    border-radius: 3px;
+    background-color: $white;
+    color: $brown;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+  }
+}

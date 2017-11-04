@@ -1,0 +1,65 @@
+@import '../base/colors.scss';
+
+.tabs {
+  box-sizing: content-box;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &.tabs--default {
+    border: 1px solid $brown;
+
+    .tabs__item {
+      color: $brown;
+      border-right-color: $brown;
+
+      &.tabs__item--selected {
+        background-color: $brown;
+      }
+    }
+  }
+
+  &.tabs--warning {
+    border: 1px solid $redOrange;
+
+    .tabs__item {
+      color: $redOrange;
+      border-right-color: $redOrange;
+
+      &.tabs__item--selected {
+        background-color: $redOrange;
+      }
+    }
+  }
+
+  .tabs__item {
+    text-align: center;
+    border-right-width: 1px;
+    border-right-style: solid;
+
+    &.tabs__item--selected {
+      color: white;
+      border-right: 0;
+    }
+
+    &.tabs__item--no-border {
+      border-right: 0;
+    }
+  }
+
+  &.tabs--horizontal {
+    .tabs__item {
+      display: inline-block;
+    }
+  }
+
+  &.tabs--verical {
+    .tabs__item {
+      display: block;
+    }
+  }
+
+  &.tabs--centered {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,14 @@
+.text-label {
+  box-sizing: border-box;
+  display: inline-block;
+  background: #F9F9F9;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
+  padding: 0 13px;
+  line-height: 30px;
+  height: 30px;
+
+  &.text-label--block {
+    display: block;
+  }
+}

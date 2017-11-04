@@ -1,0 +1,42 @@
+@import '../../../base/metrics';
+@import '../../../base/colors';
+
+$formControlBorderWidth: 1px;
+$formHintPadding: 3px;
+
+@mixin calculateFormHintHeight($size) {
+  width: $size - 2*$formHintPadding;
+  height: $size - 2*$formHintPadding;
+  line-height: $size - 2*$formHintPadding;
+}
+
+.form-hint {
+  position: absolute;
+  top: $formHintPadding - $formControlBorderWidth;
+  right: $formHintPadding - $formControlBorderWidth;
+  background-color: #d7d7d7;
+  color: $white;
+  text-align: center;
+  border-radius: $boxRadius - 1;
+  z-index: 2;
+
+  &.form-hint--focused {
+    background-color: $redOrange;
+  }
+
+  &.form-hint--md {
+    @include calculateFormHintHeight($md);
+  }
+
+  &.form-hint--lg {
+    @include calculateFormHintHeight($lg);
+  }
+
+  &.form-hint--xl {
+    @include calculateFormHintHeight($xl + 10);
+  }
+
+  &:hover {
+    background-color: #4A4342;
+  }
+}

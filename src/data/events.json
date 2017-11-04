@@ -1,0 +1,497 @@
+[
+  {
+    "id": "0001",
+    "title": "ВИРТУОЗ В ПРОДАЖБИТЕ",
+    "slogan": "ПРАКТИЧЕСКИ ТРЕНИНГ",
+    "description": "Три дни на провокации, преживявания и упражнения. Където и да се намирате в търговското си развитие към момента този тренинг е подходящ за вас. Възможно е да нямате никакъв опит или да се занимавате професионално с продажби, за вас има място и знание в този тренинг. Вземете го! Три дни на провокации, преживявания и упражнения. Където и да се намирате в търговското си развитие към момента този тренинг е подходящ за вас. Възможно е да нямате никакъв опит или да се занимавате професионално с продажби, за вас има място и знание в този тренинг. Вземете го!",
+    "summary": "някакво съмари",
+    "image": "http://www.businessnewsdaily.com/images/i/000/007/874/original/free-business-plan-templates.jpg?1421856207",
+    "thumb": "http://www.salesmanagementworkshop.com/wp-content/uploads/2014/10/Sales_Coaching_To_Maximize_Sales_Performance_sales_Management_workshop.jpg",
+    "program": {
+      "headings": [
+        { "1": "Час" },
+        { "2": "Тема" },
+        { "3": "Водещ" }
+      ],
+      "dates": [
+        {
+          "date": "07/07/2017",
+          "label": "Ден първи",
+          "hours": [
+            {
+              "hour": "08:00",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "09:00",
+              "topic": "Друго",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "11:00",
+              "topic": "Презентация",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "08:00",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "09:00",
+              "topic": "Друго",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "11:00",
+              "topic": "Презентация",
+              "host": "Иван Иванов"
+            }
+          ]
+        },
+        {
+          "date": "08/07/2017",
+          "label": "Ден втори",
+          "hours": [
+            {
+              "hour": "08:00",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "09:00",
+              "topic": "Въведение",
+              "host": "Иван Иванов"
+            }
+          ]
+        },
+        {
+          "date": "09/07/2017",
+          "label": "Ден трети",
+          "hours": [
+            {
+              "hour": "08:00",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            }
+          ]
+        },
+        {
+          "date": "10/07/2017",
+          "label": "Ден пети",
+          "hours": [
+            {
+              "hour": "08:00",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            }
+          ]
+        },
+        {
+          "date": "12/07/2017",
+          "label": "Ден десети",
+          "hours": [
+            {
+              "hour": "08:00",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "18:00",
+              "topic": "Тест",
+              "host": "Иван Иванов"
+            }
+          ]
+        }
+      ]
+    },
+    "hosts": {
+      "label": "Водещи",
+      "": [
+        {
+          "fullName": "Иван Иванов",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        },
+        {
+          "fullName": "Георги Георгиев",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        },
+        {
+          "fullName": "Иван Петров",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        }
+      ]
+    },
+    "tickets": [
+      {
+        "maxQuantity": 100,
+        "price": 123,
+        "discount": 0,
+        "sellTill": "10.07.2017 23:59",
+        "label": "При ранна регистрация",
+        "additionalInfo": "допълнителна информация"
+      }
+    ],
+    "location": {
+      "region": "област София",
+      "city": "гр. София",
+      "address": "ул. Бисер №2",
+      "place": "зала „Лозенец“ – ул. Бисер №2 (близо до НДК)"
+    },
+    "organizer": {
+      "name": "Иван Иванов",
+      "image": "https://tinyclipart.com/resource/man/man-1.jpg",
+      "jobTitle": "Бизнес мениджър",
+      "company": "Inteleksys",
+      "email": "organizer@abv.bg",
+      "phone": "0899584138",
+      "administrativeContact": {
+        "name": "Иван Иванов",
+        "email": "ааа@аа.аа",
+        "phone": "123"
+      },
+      "businessContact": {
+        "name": "Иван Иванов",
+        "email": "ааа@аа.аа",
+        "phone": "123"
+      }
+    },
+    "sharing": [
+      "facebook",
+      "google-plus"
+    ],
+    "isRecommended": true,
+    "type": "free"
+  },
+  {
+    "id": "0002",
+    "title": "FACEBOOK МАРКЕТИНГ ЗА УСПЕШЕН БИЗНЕС",
+    "slogan": "някакво под заглавие",
+    "description": "Практически насочен курс, подходящ както за собственици на малък и среден бизнес, така и за специалисти, които искат да се развиват в областта на Facebook маркетинга.",
+    "sumary": "някакво съмари",
+    "image": "https://i.ytimg.com/vi/dm_rFQgfkTc/maxresdefault.jpg",
+    "thumb": "http://webseminari.com/wp-content/uploads/2017/02/Facebook-Course-Webseminari-New.png",
+    "program": {
+      "headings": [
+        {
+          "1": "Час"
+        },
+        {
+          "2": "Тема"
+        },
+        {
+          "3": "Водещ"
+        }
+      ],
+      "dates": [
+        {
+          "date": "11.07.2017",
+          "hours": [
+            {
+              "hour": "09:30",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "09:00",
+              "topic": "Друго",
+              "host": "Иван Иванов"
+            }
+          ]
+        },
+        {
+          "date": "12.07.2017",
+          "hours": [
+            {
+              "hour": "08:00",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            }
+          ]
+        }
+      ]
+    },
+    "hosts": {
+      "label": "Водещи",
+      "": [
+        {
+          "fullName": "Иван Иванов",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        },
+        {
+          "fullName": "Георги Георгиев",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        },
+        {
+          "fullName": "Иван Петров",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        }
+      ]
+    },
+    "tickets": [
+      {
+        "maxQuantity": 20,
+        "price": 200,
+        "discount": 180,
+        "sellTill": "10.07.2017 23:59",
+        "label": "При ранна регистрация",
+        "additionalInfo": "допълнителна информация"
+      }
+    ],
+    "location": {
+      "region": "област София",
+      "city": "гр. София",
+      "address": "ул. Бисер №2",
+      "place": "зала „Лозенец“ – ул. Бисер №2 (близо до НДК)"
+    },
+    "organizer": {
+      "name": "Иван Иванов",
+      "image": "",
+      "jobTitle": "Бизнес мениджър",
+      "company": "Inteleksys",
+      "email": "organizer@abv.bg",
+      "phone": "0899584138",
+      "administrativeContact": {
+        "name": "Иван Иванов",
+        "email": "ааа@аа.аа",
+        "phone": "123"
+      },
+      "businessContact": {
+        "name": "Иван Иванов",
+        "email": "ааа@аа.аа",
+        "phone": "123"
+      }
+    },
+    "sharing": [
+      "facebook",
+      "google-plus"
+    ],
+    "isRecommended": false,
+    "type": "onSale"
+  },
+  {
+    "id": "0003",
+    "title": "ИЗЦЯЛО НОВ ЖИВОТ",
+    "slogan": "УЪРКШОП С ЛУЧИЯ ДЖОВАНИНИ",
+    "description": "На 27-ми юни, вторник, София ще е домакин на първия в България уъркшоп на световно признатия експерт по консултативна психология, невролингвистично програмиране и невросемантика Лучия Джованини. ",
+    "summary": "test",
+    "image": "https://sabitie.bg/storage/public/4/3/7/c/7/437c74efade4be917f8896a922d99b43e1d08258.png",
+    "thumb": "https://sabitie.bg/storage/public/4/3/7/c/7/437c74efade4be917f8896a922d99b43e1d08258.png",
+    "program": {
+      "headings": [
+        {
+          "1": "Час"
+        },
+        {
+          "2": "Тема"
+        },
+        {
+          "3": "Водещ"
+        }
+      ],
+      "dates": [
+        {
+          "date": "11.07.2017",
+          "hours": [
+            {
+              "hour": "09:30",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "09:00",
+              "topic": "Друго",
+              "host": "Иван Иванов"
+            }
+          ]
+        },
+        {
+          "date": "12.07.2017",
+          "hours": [
+            {
+              "hour": "08:00",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            }
+          ]
+        }
+      ]
+    },
+    "hosts": {
+      "label": "Водещи",
+      "": [
+        {
+          "fullName": "Иван Иванов",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        },
+        {
+          "fullName": "Георги Георгиев",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        },
+        {
+          "fullName": "Иван Петров",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        }
+      ]
+    },
+    "tickets": [
+      {
+        "maxQuantity": 2,
+        "price": 0,
+        "discount": 0,
+        "sellTill": "10.10.2017 23:59",
+        "label": "При ранна регистрация",
+        "additionalInfo": "допълнителна информация"
+      }
+    ],
+    "location": {
+      "region": "област София",
+      "city": "гр. София",
+      "address": "ул. Бисер №2",
+      "place": "зала „Лозенец“ – ул. Бисер №2 (близо до НДК)"
+    },
+    "organizer": {
+      "name": "Иван Иванов",
+      "image": "",
+      "jobTitle": "Бизнес мениджър",
+      "company": "Inteleksys",
+      "email": "organizer@abv.bg",
+      "phone": "0899584138",
+      "administrativeContact": {
+        "name": "Иван Иванов",
+        "email": "ааа@аа.аа",
+        "phone": "123"
+      },
+      "businessContact": {
+        "name": "Иван Иванов",
+        "email": "ааа@аа.аа",
+        "phone": "123"
+      }
+    },
+    "sharing": [
+      "facebook",
+      "google-plus"
+    ],
+    "isRecommended": false,
+    "type": "preOrder"
+  },
+  {
+    "id": "0004",
+    "title": "FACEBOOK МАРКЕТИНГ ЗА УСПЕШЕН БИЗНЕС",
+    "slogan": "",
+    "description": "Практически насочен курс, подходящ както за собственици на малък и среден бизнес, така и за специалисти, които искат да се развиват в областта на Facebook маркетинга.",
+    "sumary": "някакво съмари",
+    "image": "https://i.ytimg.com/vi/dm_rFQgfkTc/maxresdefault.jpg",
+    "thumb": "http://webseminari.com/wp-content/uploads/2017/02/Facebook-Course-Webseminari-New.png",
+    "program": {
+      "headings": [
+        {
+          "1": "Час"
+        },
+        {
+          "2": "Тема"
+        },
+        {
+          "3": "Водещ"
+        }
+      ],
+      "dates": [
+        {
+          "date": "11.07.2017",
+          "hours": [
+            {
+              "hour": "09:30",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            },
+            {
+              "hour": "09:00",
+              "topic": "Друго",
+              "host": "Иван Иванов"
+            }
+          ]
+        },
+        {
+          "date": "12.07.2017",
+          "hours": [
+            {
+              "hour": "08:00",
+              "topic": "Закуска",
+              "host": "Иван Иванов"
+            }
+          ]
+        }
+      ]
+    },
+    "hosts": {
+      "label": "Водещи",
+      "": [
+        {
+          "fullName": "Иван Иванов",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        },
+        {
+          "fullName": "Георги Георгиев",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        },
+        {
+          "fullName": "Иван Петров",
+          "jobTitle": "бизнес консултант",
+          "picture": ""
+        }
+      ]
+    },
+    "tickets": [
+      {
+        "maxQuantity": 20,
+        "price": 200,
+        "discount": 180,
+        "sellTill": "10.07.2017 23:59",
+        "label": "При ранна регистрация",
+        "additionalInfo": "допълнителна информация"
+      }
+    ],
+    "location": {
+      "region": "област София",
+      "city": "гр. София",
+      "address": "ул. Бисер №2",
+      "place": "зала „Лозенец“ – ул. Бисер №2 (близо до НДК)"
+    },
+    "organizer": {
+      "name": "Иван Иванов",
+      "image": "",
+      "jobTitle": "Бизнес мениджър",
+      "company": "Inteleksys",
+      "email": "organizer@abv.bg",
+      "phone": "0899584138",
+      "administrativeContact": {
+        "name": "Иван Иванов",
+        "email": "ааа@аа.аа",
+        "phone": "123"
+      },
+      "businessContact": {
+        "name": "Иван Иванов",
+        "email": "ааа@аа.аа",
+        "phone": "123"
+      }
+    },
+    "sharing": [
+      "facebook",
+      "google-plus"
+    ],
+    "isRecommended": false,
+    "type": "onSale"
+  }
+]

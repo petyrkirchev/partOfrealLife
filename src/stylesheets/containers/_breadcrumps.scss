@@ -1,0 +1,34 @@
+@import '../base/colors';
+@import '../base/metrics';
+
+$lineHeight: 17px;
+
+.breadcrumbs {
+  min-height: $breadcrumbsHeight;
+  line-height: $lineHeight;
+  background: $brown;
+  color: $lightBrown;
+  padding: ($breadcrumbsHeight - $lineHeight) / 2 $pagePadding;
+  font-size: 14px;
+
+  .breadcrumbs__link, .breadcrumbs--current {
+    display: inline-block;
+  }
+
+  .breadcrumbs__link {
+    position: relative;
+    color: $lightBrown;
+    padding-right: 15px;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      right: 5px;
+      content: '/'
+    }
+  }
+
+  .breadcrumbs--current {
+    color: $white;
+  }
+}

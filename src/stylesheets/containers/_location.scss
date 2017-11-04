@@ -1,0 +1,46 @@
+@import '../base/colors';
+@import '../base/metrics';
+@import '../utils/media';
+
+.location {
+  width: 100%;
+  height: auto;
+  background: $brown;
+  padding: 3px;
+
+  .location__content {
+    color: $white;
+    padding: 17px;
+
+    .location__content__title {
+      margin: 0 0 10px 0;
+    }
+
+    .location__content__address {
+      margin-top: 10px;
+    }
+  }
+
+  .location__map {
+    width: 100%;
+    height: 200px;
+  }
+
+  @include media('>=sm') {
+    .location__map {
+      height: 260px;
+    }
+  }
+
+  @include media('>=lg') {
+    .location__content {
+      .location__content__title {
+        margin: 40px 0 20px 0;
+      }
+    }
+
+    .location__map {
+      height: 280px;
+    }
+  }
+}

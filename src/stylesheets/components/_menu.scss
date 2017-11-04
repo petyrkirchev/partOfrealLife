@@ -1,0 +1,74 @@
+@import '../base/colors.scss';
+@import '../base/metrics.scss';
+
+.menu {
+  font-size: 0.875em;
+
+  .menu__list {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .menu__list__item {
+      display: block;
+      min-height: 30px;
+
+      .menu__list__item__link {
+        display: block;
+        cursor: pointer;
+
+        &.menu__list__item__link--button {
+          background-color: $redOrange;
+          border-radius: $buttonBorderRadius;
+        }
+
+        &.menu__list__item__link--no-decoration {
+          text-decoration: none;
+        }
+
+        &.menu__list__item__link--uppercase {
+          text-transform: uppercase;
+        }
+
+        &.menu__list__item__link--white {
+          color: $white;
+        }
+
+        &.menu__list__item__link--gray {
+          color: $darkGrey;
+        }
+
+        &.menu__list__item__link--brown {
+          color: $darkBrown;
+        }
+      }
+    }
+  }
+
+  &.menu--vertical {
+    width: 100%;
+    height: auto;
+
+    .menu__list__item {
+      width: 100%;
+      height: auto;
+
+      .menu__list__item__link {
+        height: auto;
+      }
+    }
+  }
+
+  &.menu__text-align--left {
+    text-align: left;
+  }
+
+  &.menu__text-align--center {
+    text-align: center;
+  }
+
+  &.menu__text-align--right {
+    text-align: center;
+  }
+}

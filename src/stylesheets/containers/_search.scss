@@ -1,0 +1,157 @@
+@import '../base/colors';
+@import '../base/metrics';
+@import '../utils/media';
+
+.search {
+  position: absolute;
+  width: 100%;
+  min-height: 60px;
+  padding: 10px 0;
+  background: $redOrange;
+
+  .search__container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .search__container__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    &.search__container__item--first {
+      margin-bottom: 10px;
+    }
+  }
+
+  .search__event {
+    display: none;
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+
+    span {
+      display: block;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .search__input {
+    position: relative;
+    background: white;
+    height: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+
+    input, select {
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+      width: 100%;
+      height: 100%;
+      font-size: 15px;
+      font-weight: 300;
+      text-indent: 10px;
+    }
+
+    input {
+      padding-right: 50px;
+    }
+
+    select {
+      padding-right: 30px;
+    }
+
+    .search__input__icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      padding: 4px;
+      background: #fff1ee;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .search__input--text {
+    width: 100%;
+  }
+
+  .search__input--date {
+    width: 40px;
+  }
+
+  .search__input--category {
+    width: 58%;
+  }
+
+  .search__input--search {
+    width: 25%;
+  }
+
+  @include media('>=md') {
+    padding: 0;
+
+    .search__container {
+      height: 70px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search__container__item {
+      justify-content: space-around;
+
+      &.search__container__item--first {
+        width: 65%;
+        margin-bottom: 0;
+      }
+
+      &.search__container__item--second {
+        width: 35%;
+      }
+    }
+
+    .search__event {
+      display: block;
+    }
+
+    .search__input--text {
+      width: 55%;
+    }
+
+    .search__input--category {
+      width: 45%;
+    }
+
+    .search__input--search {
+      width: 25%;
+    }
+  }
+
+  @include media('>=lg') {
+    .search__input--text {
+      width: 60%;
+    }
+
+    .search__input--category {
+      width: 50%;
+    }
+
+    .search__input--search {
+      width: 30%;
+    }
+  }
+}
